@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import styled from "styled-components";
-import KissTheRain from "../Videos/kiss_the_rain.mp4";
-import StuckWithYou from "../Videos/stuck_with_you.mp4";
-import Fantaisie from "../Videos/fantaisie_impromptu.mp4";
 
 interface PrevBtn {
   isPrevVisible: boolean;
@@ -51,7 +48,8 @@ const Quiz = () => {
           isSelected: false,
         },
       ],
-      video: Fantaisie,
+      video:
+        "https://youtube.com/embed/XxFS2D9ytag?rel=0&modestbranding=1&fs=0",
     },
     {
       isAnswered: false,
@@ -70,7 +68,8 @@ const Quiz = () => {
         },
         { answerText: "Yiruma - Love Me", isCorrect: false, isSelected: false },
       ],
-      video: KissTheRain,
+      video:
+        "https://youtube.com/embed/Gta_9tOdgrU?rel=0&modestbranding=1&fs=0",
     },
     {
       isAnswered: false,
@@ -85,7 +84,8 @@ const Quiz = () => {
           isSelected: false,
         },
       ],
-      video: StuckWithYou,
+      video:
+        "https://youtube.com/embed/eFh9RfT-uZw?rel=0&modestbranding=1&fs=0",
     },
   ]);
   const previous = "<< previous";
@@ -174,20 +174,20 @@ const Quiz = () => {
           </StyledNextText>
         </StyledQuizChoices>
         <StyledVideo
+          width="500"
+          height="280"
           src={questions[currentQuestion].video}
-          controls
-          controlsList="nofullscreen"
+          allowFullScreen={false}
         />
       </div>
     </section>
   );
 };
 
-const StyledVideo = styled.video`
-  width: 50%;
-  height: 50%;
+const StyledVideo = styled.iframe`
   border-radius: 1.5rem;
   @media (max-width: 800px) {
+    height: 175px;
     width: 250px;
   }
 `;
