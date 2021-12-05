@@ -10,8 +10,9 @@ const Experience = () => {
       period: "Jul 2021 - Dec 2021",
       description: [
         "Extracted key value success metrics from database system using data modelling to intepret patterns and derive values for clients",
-        "Built responsive front-end features with React JS, TypeScript and Styled-Component libraries",
-        "Improvement of user interface to enhance user experience and prevent churn",
+        "Built responsive full-stack features with React JS, TypeScript and Styled-Component libraries",
+        "Improvement of user interface to enhance user experience and prevent customer churn",
+        "Performed rigorous User Acceptance testing & Regression testing regularly to ensure a stable and functional product before it goes into commercial production",
       ],
     },
     {
