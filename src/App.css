@@ -13,7 +13,7 @@ html {
 :root {
   --primary-color: white;
   --secondary-color: #fffaeb;
-  --tertiary-color: #ebfffa;
+  --tertiary-color: #ebf0ff;
 
   --quaternary-color: #faebff;
 
@@ -34,13 +34,14 @@ html {
   --accent-color: var(--clr-grey-1);
   --correct-answer: #cbe7c6;
   --spacing: 5px;
-  --purple-color: #c6a4d1;
-  --purple-color-2: #421253;
-  --purple-color-3: #682d7c;
-  --purple-color-4: #8e5aa0;
-  --purple-color-5: #af7ec0;
-  --purple-color-6: #c69bd4;
-  --purple-color-7: #dbc3e4;
+  --orange-color: #fffaeb;
+  --orange-color-2: #faf1d7;
+  --orange-color-3: #fae8b1;
+  --orange-color-4: #ffe38f;
+  --orange-color-5: #fddb74;
+  --orange-color-6: #ffd24d;
+  --orange-color-7: #ffc824;
+  --orange-color-8: #c09104;
   --wrong-answer: #df9797;
   --gold-color-1: #513c06;
   --gold-color-2: #7a5c10;
@@ -406,11 +407,11 @@ section h1 {
 
 /* Experience */
 #experience {
-  background-color: var(--quaternary-color);
+  background-color: var(--tertiary-color);
 }
 
 #experience h1 {
-  color: var(--purple-color-2);
+  color: var(--gold-color-1);
   font-size: 2rem;
 }
 
@@ -435,47 +436,51 @@ section h1 {
   padding: 1px;
   border: none;
   background-color: transparent;
-  color: var(--purple-color-2);
+  color: var(--gold-color-1);
 }
 
 .company-btn.active-btn {
-  box-shadow: 0 0 10px var(--purple-color-2);
-  color: var(--purple-color-5);
+  box-shadow: 0 0 10px var(--gold-color-5);
+  color: var(--orange-color-7);
   background-color: white;
 }
 
 .company-btn:hover {
-  box-shadow: 0 0 10px var(--purple-color-2);
+  box-shadow: 0 0 10px var(--gold-color-5);
   cursor: pointer;
   transition: var(--transition);
-  color: var(--purple-color-5);
+  color: var(--orange-color-7);
+  background-color: white;
 }
 
 .description-container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 5%;
+  padding: 2%;
 }
 
 .description-container h2 {
-  color: var(--purple-color-2);
+  color: var(--gold-color-3);
   font-weight: 500px;
   padding: 10px 0 5px 5px;
   text-transform: uppercase;
 }
 
 .description-container h3 {
-  color: var(--purple-color-2);
+  color: var(--gold-color-3);
   padding: 0 0 5px 5px;
 }
 
 .description-container span {
-  background-color: var(--purple-color-7);
+  background-color: var(--secondary-color);
   padding: 2px 10px;
   margin-bottom: 10px;
   border-radius: 10px;
   letter-spacing: var(--spacing);
-  color: white;
+  color: var(--orange-color-7);
   font-weight: 800;
 }
 
@@ -488,51 +493,20 @@ section h1 {
 }
 
 .mapleleaf {
-  color: #c6a4d1;
+  color: var(--orange-color-3);
 }
 
 .responsibility-container .responsibility {
   color: var(--tertiary-color-2);
 }
 
-.experience-container .experienceRow {
-  height: 2rem;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-}
-
-.experience-container .experienceRow h4 {
-  font-size: 1.2rem;
-  width: 15%;
-  text-align: right;
-}
-
-.experience-container .experienceRow .experienceBar {
-  width: 85%;
-  border: 1px solid var(--accent-color);
-  border-radius: 15px;
-  margin: 0 20px;
-}
-
-.experience-container .experienceRow .experienceBar .experienceFill {
-  height: 2rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border-radius: 12px;
-  padding-right: 10px;
-  background: var(--accent-color);
-  transition: width 2s;
-}
-
 /* Portfolio */
 #portfolio {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
 
 #portfolio h1 {
-  color: #06362a;
+  color: var(--gold-color-1);
 }
 
 .portfolio-container {
@@ -721,6 +695,7 @@ section h1 {
   }
   .companies {
     margin-top: -50px;
+    margin-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
