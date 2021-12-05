@@ -338,15 +338,15 @@ nav {
 .home h1 {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 25%;
   transform: translate(-50%, -50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   color: #000;
   text-shadow: 0 0 10px white;
   animation: popout 6s ease-in;
-  font-family: "Edwardian Script ITC";
+  font-family: "Times New Roman", Times, serif;
 }
 
 .home h1 svg {
@@ -361,7 +361,7 @@ nav {
 /* ALL SECTIONS */
 section {
   width: 100vw;
-  padding: 5% 10% 5% 10%;
+  padding: 7% 10% 5% 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,6 +385,7 @@ section h1 {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .about-container .about-text {
@@ -401,6 +402,7 @@ section h1 {
 }
 
 .about-container img {
+  margin: 20px 0;
   width: calc(0.3 * 100vw);
   padding: 5%;
   border-radius: 50%;
@@ -462,12 +464,13 @@ section h1 {
   border-radius: 5%;
   padding: 2%;
   height: 100%;
+  margin-bottom: 30px;
 }
 
 .description-container h2 {
   color: var(--gold-color-3);
   font-weight: 500px;
-  padding: 10px 0 5px 5px;
+  padding: 5px 5px;
   text-transform: uppercase;
 }
 
@@ -488,7 +491,7 @@ section h1 {
 
 .responsibility-container {
   display: grid;
-  padding: 1% 0 1% 0;
+  padding: 1.5% 0 1% 0;
   grid-template-columns: auto 1fr;
   align-items: center;
   grid-gap: 10px;
@@ -517,15 +520,16 @@ section h1 {
   width: 100%;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .portfolio-container .project {
   position: relative;
   height: 300px;
-  width: 400px;
+  width: 380px;
   overflow: hidden;
   border-radius: 15px;
-  margin: 0 0 3rem 10px;
+  margin: 2rem 10px 3rem 10px;
 }
 
 .portfolio-container .project img {
@@ -572,7 +576,7 @@ section h1 {
 /* Contact */
 .contact {
   width: 100vw;
-  padding: 2% 10%;
+  padding: 5% 10%;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -591,9 +595,9 @@ section h1 {
 }
 
 .contact .socials {
+  margin: 20px;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 10px;
 }
 
 .contact .socials a svg {
@@ -637,6 +641,7 @@ section h1 {
   margin-top: 40px;
   border: 1px solid var(--gold-color-3);
   border-radius: var(--border-radius);
+  margin-bottom: 50px;
 }
 
 .quiz-container .quiz-text button:hover {
@@ -681,7 +686,7 @@ section h1 {
 
   .contact .socials a svg {
     width: 20px;
-    height: 25px;
+    height: 30px;
   }
 
   #quiz .quiz-container {
@@ -703,5 +708,16 @@ section h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+  section h1 {
+    margin-top: 20px;
+  }
+
+  .about-container .about-text p {
+    font-size: 14px;
+  }
+
+  .portfolio-container .project img {
+    width: 100%;
   }
 }
