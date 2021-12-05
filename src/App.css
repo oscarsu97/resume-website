@@ -235,7 +235,7 @@ nav {
   position: absolute;
   top: 0%;
   right: 0%;
-  background-color: var(--accent-color);
+  background-color: wheat;
   display: none;
   justify-content: center;
   align-items: center;
@@ -247,6 +247,7 @@ nav {
 
 .navigation .nav_button svg {
   position: absolute;
+  color: white;
 }
 
 .logo-container {
@@ -460,6 +461,7 @@ section h1 {
   background-color: white;
   border-radius: 5%;
   padding: 2%;
+  height: 100%;
 }
 
 .description-container h2 {
@@ -486,7 +488,7 @@ section h1 {
 
 .responsibility-container {
   display: grid;
-  padding: 10px 0 5px 5px;
+  padding: 1% 0 1% 0;
   grid-template-columns: auto 1fr;
   align-items: center;
   grid-gap: 10px;
